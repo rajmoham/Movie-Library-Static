@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body id="body">
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="./assets/logo.png" alt="">
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#header">Home</a></li>
+                    <li><a class="nav__link" href="#featured">Movies</a></li>
+                    <li><a class="nav__link nav__link--primary" href="mailto:rajmoham10@gmail.com">Contact</a></li>
+                </ul>
+                <button class="btn menu__btn" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu" id="menu">
+                    <button class="menu__btn--close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+                    <ul class="menu__links">
+                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#header">Home</a></li>
+                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#featured">Movies</a></li>
+                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#mailto:rajmoham10@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1 class="text-blue">The best movie collection platform in the UK</h1>
+                    <h2>Watch your favourites with <span class="text-blue">Movie Library</span></h2>
+                    <button class="btn">Browse Movies</button>
+                </div>
+                <figure class="header__img--container">
+                    <img class="header__img" src="./assets/home-cinema.svg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+    <main>
+        <section id="highlights">
+            <div>
+                <div class="row">
+                    <h2 class="section-title">Why choose <span class="text-blue">Our Service?</span></h1>
+                        <div class="highlight__wrapper">
+                            <div class="highlight">
+                                <div class="highlight__img">
+                                    <i class="fas fa-money-bill"></i>
+                                </div>
+                                <h3 class="highlight__subtitle">Affordable</h3>
+                                <p class="highlight__description">Monthly subcription start from only £5.99</p>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight__img">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <h3 class="highlight__subtitle">Unlimited Access</h3>
+                                <p class="highlight__description">Get access on all devices with no limits</p>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight__img">
+                                    <i class="far fa-thumbs-up"></i>
+                                </div>
+                                <h3 class="highlight__subtitle">Trusted by many</h3>
+                                <p class="highlight__description">Our services are used by over 10,000+ users</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured">
+            <div class="container featured-container">
+                <div class="row">
+                    <h2 class="section-title">Featured <span class="text-blue">Movies</span></h2>
+                    <div class="movie__wrapper">
+                        <div class="movie">
+                            <figure>
+                                <img class="movie__img" src="./assets/age of ultron.jpeg" alt="">
+                            </figure>
+                            <h4 class="movie__title">Avengers: Age of Ultron</h4>
+                            <h5 class="movie_rating">4.54 / 5</h5>
+                        </div>
+                        <div class="movie">
+                            <figure class="">
+                                <img class="movie__img" src="./assets/thor-ragnarok.png" alt="">
+                            </figure>
+                            <h4 class="movie__title">Thor: Ragnarok</h4>
+                            <h5 class="movie_rating">4.78 / 5</h5>
+                        </div>
+                        <div class="movie">
+                            <figure>
+                                <img class="movie__img" src="./assets/homecoming.jpeg" alt="">
+                            </figure>
+                            <h4 class="movie__title">Spider-man: Homecoming</h4>
+                            <h5 class="movie_rating">4.61 / 5</h5>
+                        </div>
+                        <div class="movie">
+                            <figure>
+                                <img class="movie__img" src="./assets/iron-man.jpeg" alt="">
+                            </figure>
+                            <h4 class="movie__title">Iron Man</h4>
+                            <h5 class="movie_rating">4.98 / 5</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent">
+            <div class="container">
+                <div class="row">
+                    <h2>Recent <span class="text-blue">Movies</span></h2>
+                    <div class="recent__container">
+                        <div class="movie__wrapper">
+
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/ant-man.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">Ant Man</h4>
+                                <h5 class="movie_rating">3.58 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/black-panther.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">black-panther</h4>
+                                <h5 class="movie_rating">3.74 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/iron-man-2.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">Iron Man 2</h4>
+                                <h5 class="movie_rating">3.99 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/captain-marvel.jpg" alt="">
+                                </figure>
+                                <h4 class="movie__title">captain-marvel</h4>
+                                <h5 class="movie_rating">4.17 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/endgame.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">Avengers: Endgame</h4>
+                                <h5 class="movie_rating">4.31 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/gotg.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">Guardians of the Galaxy</h4>
+                                <h5 class="movie_rating">4.48 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/thor-love-and-thunder.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">Thor: Love and Thunder</h4>
+                                <h5 class="movie_rating">4.29 / 5</h5>
+                            </div>
+                            <div class="movie">
+                                <figure>
+                                    <img class="movie__img" src="./assets/winter-solder.jpeg" alt="">
+                                </figure>
+                                <h4 class="movie__title">Captain America: Winter Soldier</h4>
+                                <h5 class="movie_rating">3.62 / 5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="browse">
+            <div class="container">
+                <div class="row">
+                    <h2>Browse our <span class="text-blue">Collection</span></h2>
+                    <div class="browse__wrapper">
+                        <button class="btn">Browse Movies</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__container">
+                    <img class="footer__img" src="./assets/logo.png" alt="">
+                    <div class="footer__links">
+                        <a class="footer__link" href="">Home</a>
+                        <a class="footer__link" href="">About Us</a>
+                        <a class="footer__link" href="">FAQ</a>
+                        <a class="footer__link" href="">Terms and Conditions</a>
+                        <a class="footer__link" href="">Careers</a>
+                        <a class="footer__link" href="">Contact Us</a>
+                    </div>
+                    <p class="footer__para">Copyright © 2022 - Movie Library</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</html>
